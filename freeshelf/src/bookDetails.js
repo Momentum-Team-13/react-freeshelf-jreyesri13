@@ -10,7 +10,7 @@ export default function BookDetails({ book, index }) {
             <h2>{book.title}</h2>
             <p>{book.author}</p>
             <p>{book.shortDescription}</p>
-            <img src={book.shortDescription} alt="Book Cover"></img>
+            {/* <img src={book.coverImageUrl} alt="Book Cover"></img> */}
             {expanded ? (
                 <>
                     <div
@@ -22,9 +22,10 @@ export default function BookDetails({ book, index }) {
                         <span>Show less</span>
                     </div>
 
-                    <p>{book.url}</p>
-                    <p>{book.publisher}</p>
-                    <p>{book.publicationDate}</p>
+                    <p>URL: <a href={book.url} rel="noreferrer noopener nofollow" target="_blank">{book.url}</a></p>
+                    <p>Publisher: {book.publisher}</p>
+                    <p>Publication Date: {book.publicationDate}</p>
+                    <p>Full Description:</p>
                     <p>{book.detailedDescription}</p>
 
                 </>
