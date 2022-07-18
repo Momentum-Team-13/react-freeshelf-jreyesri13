@@ -1,6 +1,6 @@
 // import React from 'react'
-import { useState } from 'react'
-import { TriangleDownIcon, TriangleRightIcon } from '@primer/octicons-react'
+import { useState } from 'react';
+import { TriangleDownIcon, TriangleRightIcon } from '@primer/octicons-react';
 
 // function BookDetails(props) {
 //     return (
