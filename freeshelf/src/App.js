@@ -88,7 +88,7 @@ function App() {
 
   return (
     <>
-      <h1>Programming Books</h1>
+      <h1 class="tc">Programming Books</h1>
       {bookObjects.map((book, index) => (
         <BookDetails book={book} key={index} />
       ))}

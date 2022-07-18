@@ -6,11 +6,12 @@ import { TriangleDownIcon, TriangleRightIcon } from '@primer/octicons-react';
 export default function BookDetails({ book, index }) {
     const [expanded, setExpanded] = useState(false)
     return (
-        <div onClick={() => setExpanded(!expanded)}>
+        <div onClick={() => setExpanded(!expanded)} class="pl3 pv1">
             <h2>{book.title}</h2>
             <p>{book.author}</p>
             <p>{book.shortDescription}</p>
-            {/* <img src={book.coverImageUrl} alt="Book Cover"></img> */}
+            <img src={book.coverImageUrl} alt="Book Cover" class="fr pr3 inline"></img>
+            
             {expanded ? (
                 <>
                     <div
